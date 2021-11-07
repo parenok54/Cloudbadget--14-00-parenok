@@ -1,0 +1,49 @@
+.slider {
+  height: 500px;
+  background-color: $primred;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    row-gap: 40px;
+
+    &-title {
+      @include font(36px, 43px);
+      font-style: normal;
+      font-weight: 500;
+      color: #FFFFFF;
+      width: 445px;
+    }
+
+    &-text {
+      @include font(14px, 140%);
+      font-style: normal;
+      font-weight: normal;
+      color: #FFFFFF;
+      width: 445px;
+    }
+
+    &-link {
+      font-size: 25px;
+      color: #ffffff;
+      transition: all .5s;
+      &:hover{
+        transform: scale(1.5);
+      }
+    }
+
+    &-icons {
+      display: flex;
+      column-gap: 25px;
+    }
+  }
+
+
+  &__img {
+    display: flex;
+    align-items: center;
+    height: 500px;
+  }
+}

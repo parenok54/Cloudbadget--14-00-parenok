@@ -1,0 +1,57 @@
+.technology{
+  height: 500px;
+  display: flex;
+  align-items: center;
+&__title{
+  @include font(36px, 43px);
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 70px;
+}
+  &__content{
+    position: relative;
+&-title{
+  @include font(18px, 22px);
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: $primblack;
+}
+    &-icon1{
+      margin-top: -5px;
+    }
+    &-title2{
+      margin-top: -13px;
+    }
+    &-title1{
+      margin-top: -22px;
+    }
+    &-text{
+      @include font(12px, 14px);
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      width: 200px;
+    }
+    &-num{
+      @include font(100px, 120px);
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      color: rgba(16, 16, 16, 0.08);
+    }
+
+    &-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      row-gap: 15px;
+      position: absolute;
+      top: 60px;
+    }
+
+  }
+}

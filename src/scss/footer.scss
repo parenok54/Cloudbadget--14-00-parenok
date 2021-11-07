@@ -1,0 +1,66 @@
+.footer {
+  background-color: $primwhite;
+  height: 435px;
+  display: flex;
+  align-items: center;
+
+  &__links {
+    display: flex;
+    column-gap: 14px;
+
+    &-icon {
+      color: $primblack;
+      font-size: 14px;
+      transition: all .5s;
+
+      &:hover {
+        color: $primred;
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &__title {
+    @include font(18px, 22px);
+    font-style: normal;
+    font-weight: bold;
+    color: $primblack;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @include font(12px, 150%);
+    font-style: normal;
+    font-weight: normal;
+    width: 142px;
+  }
+
+  &__services {
+    @include font(12px, 160%);
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primblack;
+    display: block;
+  }
+
+  &__tel {
+    text-decoration: none;
+    color: #121212;
+    display: block;
+    margin: 10px 0;
+  }
+
+  &__copy {
+    @include font(12px, 14px);
+    font-style: normal;
+    font-weight: normal;
+    color: $primblack;
+    margin-top: 141px;
+    margin-left: 1%;
+  }
+}
